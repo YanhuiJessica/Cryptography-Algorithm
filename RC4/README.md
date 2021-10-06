@@ -2,7 +2,7 @@
 
 ## 密钥流生成
 
-- 对应函数 `KSA` 和 `PRGA`
+- 对应函数 [`KSA`](https://github.com/YanhuiJessica/Cryptography-Algorithm/blob/main/RC4/rc4.py#L1) 和 [`PRGA`](https://github.com/YanhuiJessica/Cryptography-Algorithm/blob/main/RC4/rc4.py#L16)
 - 获取密钥流：`PRGA(KSA(key))`
 
 ### KSA
@@ -24,7 +24,7 @@
 - 调用 `PRGA` 函数获取密钥流生成器
 - 当且仅当调用 `__next__()` 时执行一次循环体
 
-## 加密过程
+## 加密过程（[`encrypt`](https://github.com/YanhuiJessica/Cryptography-Algorithm/blob/main/RC4/rc4.py#L30)）
 
 <table>
 <thead>
@@ -69,7 +69,7 @@
 - 密钥、明文及加密结果<br>
 ![RC4 加密示例](img/encrypt-sample.jpg)
 
-## 解密过程
+## 解密过程（[`decrypt`](https://github.com/YanhuiJessica/Cryptography-Algorithm/blob/main/RC4/rc4.py#L58)）
 
 <table>
 <thead>
