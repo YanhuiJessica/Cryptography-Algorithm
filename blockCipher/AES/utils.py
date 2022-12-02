@@ -1,3 +1,11 @@
+import numpy as np
+
+def bytes2matrix(b):
+    return np.reshape(list(map(int, b)), (4, 4)).tolist()
+
+def matrix2bytes(m):
+    return bytes(sum(m, []))
+
 def add_round_key(state, key):
     state = [[sc ^ kc for sc, kc in zip(sr, kr)] for sr, kr in zip(state, key)]
 
